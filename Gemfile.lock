@@ -40,7 +40,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dotenv
   liff_selector
   line-bot
   sinatra

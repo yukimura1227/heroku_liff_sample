@@ -1,0 +1,20 @@
+default: &default
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/development.sqlite3
+  database: db/development.sqlite3
+
+production:
+  adapter: pg
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  database: note_app
+  username: note_app_user
+  password: xxxxxx
+  host: 127.0.0.1
+

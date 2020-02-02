@@ -9,7 +9,7 @@ development:
   database: db/development.sqlite3
 
 production:
-  adapter: pg
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   pool: 5

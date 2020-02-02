@@ -13,8 +13,4 @@ production:
   encoding: utf8
   reconnect: false
   pool: 5
-  database: note_app
-  username: note_app_user
-  password: xxxxxx
-  host: 127.0.0.1
-
+  url: <%= ENV['DATABASE_URL'] %>

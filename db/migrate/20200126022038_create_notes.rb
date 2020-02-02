@@ -1,6 +1,6 @@
 class CreateNotes < ActiveRecord::Migration[5.2]
   def change
-    create_table :users do |t| 
+    create_table :notes do |t| 
       t.integer :icon_type
       t.string :name
       t.string :key1

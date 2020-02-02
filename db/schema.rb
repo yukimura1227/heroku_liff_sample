@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_01_26_022038) do
 
-  create_table "users", force: :cascade do |t|
+  create_table "notes", force: :cascade do |t|
     t.integer "icon_type"
     t.string "name"
     t.string "key1"

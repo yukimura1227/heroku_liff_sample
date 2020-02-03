@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>sample application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    </head>
+    <body>
+      <% @notes.each do |note| %>
+        <div><%= note.name %></div>
+      <% end %>
+    </body>
+</html>

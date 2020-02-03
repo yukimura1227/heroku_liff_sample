@@ -1,9 +1,21 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'line/bot'
+require_relative 'models/note'
 
 get '/' do
   erb :index
+end
+
+get '/dummy_note_create' do
+  Note.create(name: Time.now.to_s)
+  @notes = Note.all
+  erb :dummy_note_list
+end
+
+get '/dummy_note_list' do
+  @notes = Note.all
+  erb :dummy_note_list
 end
 
 def client
